@@ -1,0 +1,18 @@
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/
+      
+microservice:
+  demo:
+   endpoints:
+    endpoints:
+      uri:http://localhost:8086/demo
+  user:
+   endpoints:
+    endpoints:
+     uri:http://localhost:8080/demo      
