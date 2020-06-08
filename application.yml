@@ -10,9 +10,9 @@ eureka:
 microservice:
   demo:
    endpoints:
-    endpoints:
+    endpoint:
       uri:http://localhost:8086/demo
-  user:
+  hystrix:
    endpoints:
-    endpoints:
+    endpoint:
      uri:http://localhost:8080/demo      
