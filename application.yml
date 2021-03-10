@@ -8,11 +8,13 @@ eureka:
       defaultZone: http://localhost:8761/eureka
       
 microservice:
-  order-service:
-   endpoints:
-    endpoint:
-      uri:http://ORDER-SERVICE:9090/orders
   payment-service:
    endpoints:
     endpoint:
      uri:http://PAYMENT-SERVICE:9091/payments     
+
+  order-service:
+   endpoints:
+    endpoint:
+      uri:http://ORDER-SERVICE:9090/orders
+  
